@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beLYve - Poetry for the Soul</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BeLYve</h1>
+    </header>
+    <main>
+        <section id="poetry-type-selection">
+            <h2>Select the type of your Poetry</h2>
+            <div class="poetry-type-buttons">
+                <button id="writers-choice" onclick="showPoetry('Writers Choice')">Writer's Choice</button>
+                <button id="love" onclick="showPoetry('Love')">Love</button>
+                <button id="nature" onclick="showPoetry('Nature')">Nature</button>
+                <button id="broken-heart" onclick="showPoetry('Broken Heart')">Broken Heart</button>
+            </div>
+        </section>
+        
+        <section id="poetry-content" style="display: none;">
+            <h2 id="selected-poetry-type"></h2>
+            <div class="poetry-titles">
+                <!-- Poetry titles will be dynamically added here -->
+            </div>
+            <button id="bottom-back-button" onclick="goBack()">Back to Home</button> <!-- Back button at the bottom -->
+        </section>
+
+        <section id="poem-display" style="display: none;">
+            <h2 id="poem-title" class="highlighted-title"></h2> <!-- Highlighted title -->
+            <div class="poem-text" style="text-align: left;"></div>
+            <button onclick="goBackToTitles()" style="margin-top: 20px;">Back to Titles</button> <!-- Space added -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Developed by - Yash Pundir</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

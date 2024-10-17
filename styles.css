@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Dark background for a sleek look */
+    color: #f0e68c; /* Soft gold text color */
+}
+
+header {
+    background-color: #1a1a1a; /* Darker header */
+    color: #f0e68c;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Soft shadow */
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+#poetry-type-selection {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.poetry-type-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.poetry-titles {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Align titles vertically */
+    align-items: center; /* Center titles horizontally */
+}
+.highlighted-title {
+    color: #f0e68c; /* Highlight color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.poetry-titles {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Align titles vertically */
+    align-items: center; /* Center titles horizontally */
+}
+
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px; /* More rounded for a soft feel */
+    background-color: #f0e68c; /* Gold button background */
+    color: #121212; /* Dark text for contrast */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    margin-bottom: 10px; /* Space between titles */
+}
+
+button:hover {
+    background-color: #d4c45b; /* Slightly darker on hover */
+    transform: translateY(-2px); /* Lift effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+}
+
+#poetry-content {
+    display: none;
+    text-align: center;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #f0e68c;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5);
+}
